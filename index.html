@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <title>Halaman Anda</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    
+<body>
+    <!-- Navbar -->
+<nav class="navbar">
+    <div class="navbar-left">
+        <img class="navbar-brand" src="namalogo.png" alt="Nama Anda">
+    </div>
+</nav>
+
+<div class="info-box">
+    <h2>Informasi</h2>
+    <p>Ini adalah kotak informasi tambahan di bawah navbar. Anda bisa menambahkan detail tentang aplikasi, website, atau informasi penting di sini.</p>
+</div>
+
+
+    <div class="slider-container">
+        <!-- Slider 1 -->
+        <div class="slider-header">
+            <span class="label">teks 1</span>
+        </div>        
+        <div class="slider" id="slider1">
+            <div class="slider-track">
+                <div class="slider-item">
+                    <img src="https://via.placeholder.com/600x400?text=Image+1" alt="Image 1">
+                    <button class="link-btn" onclick="goToLink('https://example.com/link1')">Go to Link 1</button>
+                </div>
+                <div class="slider-item">
+                    <img src="https://via.placeholder.com/600x400?text=Image+2" alt="Image 2">
+                    <button class="link-btn" onclick="goToLink('https://example.com/link2')">Go to Link 2</button>
+                </div>
+                <div class="slider-item">
+                    <img src="https://via.placeholder.com/600x400?text=Image+3" alt="Image 3">
+                    <button class="link-btn" onclick="goToLink('https://example.com/link3')">Go to Link 3</button>
+                </div>
+            </div>
+            <!-- Controls -->
+            <div class="controls">
+                <button class="arrow left-arrow" onclick="moveSlider(-1, 'slider1')">&#10094;</button>
+                <button class="arrow right-arrow" onclick="moveSlider(1, 'slider1')">&#10095;</button>
+            </div>
+        </div>
+
+        <!-- Slider 2 -->
+        <div class="slider-header">
+            <span class="label">teks 1</span>
+        </div>        
+        <div class="slider" id="slider2">
+            <div class="slider-track">
+                <div class="slider-item">
+                    <img src="https://via.placeholder.com/600x400?text=Image+A" alt="Image A">
+                    <button class="link-btn" onclick="goToLink('https://example.com/linkA')">Go to Link A</button>
+                </div>
+                <div class="slider-item">
+                    <img src="https://via.placeholder.com/600x400?text=Image+B" alt="Image B">
+                    <button class="link-btn" onclick="goToLink('https://example.com/linkB')">Go to Link B</button>
+                </div>
+                <div class="slider-item">
+                    <img src="https://via.placeholder.com/600x400?text=Image+C" alt="Image C">
+                    <button class="link-btn" onclick="goToLink('https://example.com/linkC')">Go to Link C</button>
+                </div>
+            </div>
+            <!-- Controls -->
+            <div class="controls">
+                <button class="arrow left-arrow" onclick="moveSlider(-1, 'slider2')">&#10094;</button>
+                <button class="arrow right-arrow" onclick="moveSlider(1, 'slider2')">&#10095;</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
